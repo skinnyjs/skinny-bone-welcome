@@ -1,0 +1,28 @@
+{
+    "name":            "skinny-bone-welcome",
+    "version":         "0.1.0",
+    "description":     "Prints welcome message with service name and available actions",
+    "author":          "Geometria Lab",
+    "contributors":    [
+        {
+            "name":  "Ivan Shumkov",
+            "email": "ivan@shumkov.ru"
+        },
+        {
+            "name":  "Max Ivanov",
+            "email": "maximiv@gmail.com"
+        }
+    ],
+    "main":            "./bone.js",
+    "repository":      {
+        "type": "git",
+        "url":  "https://github.com/skinnyjs/skinny-bone-welcome.git"
+    },
+    "dependencies":    {
+        "asciimo": "*"
+    },
+    "devDependencies": {},
+    "engines":         [
+        "node >=0.11"
+    ]
+}
