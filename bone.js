@@ -5,15 +5,20 @@ module.exports = function attachWelcome(skinny, text) {
 
     skinny.on('start', function() {
         asciimo.write(text, 'Puffy', function(art) {
-            console.log();
-            console.log(art);
+            text = `\n${art}`;
 
             if (skinny.actions) {
-                console.log('My actions:');
+                text += "My actions:\n";
 
                 Object.keys(skinny.actions).forEach(function(name) {
-                    console.log(' - ' + name);
+                    text += ` - ${name}\n`;
                 });
+            }
+
+            if (skinny.logger) {
+                skinny.logger.info(text);
+            } else {
+                console.log(text);
             }
         });
     });

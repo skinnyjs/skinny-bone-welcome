@@ -1,6 +1,6 @@
 {
     "name":            "skinny-bone-welcome",
-    "version":         "0.1.0",
+    "version":         "0.2.0",
     "description":     "Prints welcome message with service name and available actions",
     "author":          "Geometria Lab",
     "contributors":    [
@@ -23,6 +23,6 @@
     },
     "devDependencies": {},
     "engines":         [
-        "node >=0.11"
+        "iojs >= 2.0"
     ]
 }
